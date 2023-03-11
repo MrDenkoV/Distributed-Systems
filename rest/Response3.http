@@ -1,0 +1,103 @@
+HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 2862
+Vary: Cookie
+Server: Werkzeug/2.0.1 Python/3.8.2
+Date: Mon, 24 May 2021 21:47:49 GMT
+
+<!doctype html>
+<html>
+<body>
+    <h1 align=center>Currencies</h1>
+    <p align=center>Simple currencies investigator <a href="/">FORM!</a></p>
+    
+    <style>
+        table {border: 1px solid black; width:75%}
+        td, th {text-align: center; border: 1px solid black}
+    </style>
+    <h1 align=center>Results</h1>
+    <h3 align=center>How much you would save buying now compared to buying in the past</h3>
+    <div align=center>
+        <b>Amount:</b> 100.0 <br>
+        <b>Date:</b> 2021-05-24 <br>
+        <b>From:</b> JPY <br>
+        <b>Rates:</b>
+        <table>
+            <tr>
+                <th>Currency</th>
+                <th>Current rate</th>
+                <th>One day change</th>
+                <th>One week change</th>
+                <th>One month change</th>
+                <th>One year change</th>
+            </tr>
+            
+                <tr>
+                    <td>PLN</td>
+                    <td>3.3729</td>
+                    
+                        
+                    
+                        
+                            <td style="color:green">
+                                0.0124
+                            </td>
+                        
+                    
+                        
+                            <td style="color:green">
+                                0.053
+                            </td>
+                        
+                    
+                        
+                            <td style="color:green">
+                                0.1371
+                            </td>
+                        
+                    
+                        
+                            <td style="color:green">
+                                0.4825
+                            </td>
+                        
+                    
+                </tr>
+            
+                <tr>
+                    <td>USD</td>
+                    <td>0.9184</td>
+                    
+                        
+                    
+                        
+                            <td style="color:green">
+                                0.00069
+                            </td>
+                        
+                    
+                        
+                            <td style="color:red">
+                                -0.00264
+                            </td>
+                        
+                    
+                        
+                            <td style="color:green">
+                                0.0099
+                            </td>
+                        
+                    
+                        
+                            <td style="color:green">
+                                0.0115
+                            </td>
+                        
+                    
+                </tr>
+            
+        </table>
+    </div>
+
+</body>
+</html>

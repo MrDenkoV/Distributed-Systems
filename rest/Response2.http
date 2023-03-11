@@ -1,0 +1,13 @@
+HTTP/1.0 302 FOUND
+Content-Type: text/html; charset=utf-8
+Content-Length: 222
+Location: http://127.0.0.1:5000/results
+Vary: Cookie
+Set-Cookie: session=.eJwli8EKgzAQRP9lzxGSGDV67qmUIkgPpZSSuFkoJQZiPIn_3gRvb97M7DCvkT4p_NwCA6hOtFY5Q1ZzzWskIRrZIlItCHvsZqWxl9YBAwrRw7CD8WFbUv4KzrNGU1hyKSreVFKVZczmOj4zrpv13zKYTmCQQk7j7c4e0wWOM7-KyF1R7-MPGG0t3w.YKwe9A.JtSwWt_k8YfP2eK5GbNgOFFnb5o; HttpOnly; Path=/
+Server: Werkzeug/2.0.1 Python/3.8.2
+Date: Mon, 24 May 2021 21:47:32 GMT
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to target URL: <a href="/results">/results</a>. If not click the link.

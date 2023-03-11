@@ -1,0 +1,39 @@
+{% extends "home.html" %}
+
+{% block content %}
+    <style>
+        table {border: 1px solid black; width:75%}
+        td, th {text-align: center; border: 1px solid black}
+    </style>
+    <h1 align=center>Results</h1>
+    <h3 align=center>How much you would save buying now compared to buying in the past</h3>
+    <div align=center>
+        <b>Amount:</b> {{ amount }} <br>
+        <b>Date:</b> {{ date }} <br>
+        <b>From:</b> {{ frm }} <br>
+        <b>Rates:</b>
+        <table>
+            <tr>
+                <th>Currency</th>
+                <th>Current rate</th>
+                <th>One day change</th>
+                <th>One week change</th>
+                <th>One month change</th>
+                <th>One year change</th>
+            </tr>
+            {% for dict_item in rates %}
+                <tr>
+                    <td>{{dict_item}}</td>
+                    <td>{{rates[dict_item]['current']}}</td>
+                    {% for key, val in rates[dict_item].items() %}
+                        {% if key != "current" %}
+                            <td style="color:{{'red' if val < 0 else 'green' if val > 0 else 'black'}}">
+                                {{val}}
+                            </td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

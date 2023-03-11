@@ -1,0 +1,5 @@
+Ja Stanisław Denkowski oświadczam, że niniejsze zadanie wykonałem samodzielnie.
+
+Programy działają u mnie - wersje:
+macOS Big Sur - version 11.2.3 (20D91)
+python - version 3.8.2

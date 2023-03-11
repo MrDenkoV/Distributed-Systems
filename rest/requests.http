@@ -1,0 +1,40 @@
+GET http://127.0.0.1:5000
+
+###
+
+POST http://127.0.0.1:5000/ HTTP/3.0
+content-type: application/json
+
+{
+    "fr": "JPY",
+    "to": "PLN,USD",
+    "amount": "100",
+    "dat": "2021-05-24",
+    "submit": "Submit"
+}
+
+###
+
+GET http://127.0.0.1:5000/results
+
+###
+
+https://api.frankfurter.app/latest?amount=1.00&from=PLN&to=EUR,GBP
+
+###
+
+https://api.frankfurter.app/currencies
+
+###
+
+https://api.frankfurter.app/2010-05-22?amount=1000.00&from=JPY
+
+### https://www.frankfurter.app/docs/
+
+
+
+
+
+
+
+GET 

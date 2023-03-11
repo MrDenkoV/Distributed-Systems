@@ -1,0 +1,25 @@
+{% extends "home.html" %}
+
+{% block content %}
+    <h1 align=center>Form</h1>
+    <form method="POST" action="{{ url_for('index') }}">
+    {{ form.hidden_tag() }}
+    <fieldset class="form-field">
+        {{ form.fr.label }}
+        {{ form.fr }}
+    </fieldset>
+    <fieldset class="form-field">
+        {{ form.to.label }}
+        {{ form.to(class_="form-field", size=33) }}
+    </fieldset>
+    <fieldset class="form-field">
+        {{ form.amount.label }}
+        {{ form.amount }}
+    </fieldset>
+    <fieldset class="form-field">
+        {{ form.dat.label }}
+        {{ form.dat }}
+    </fieldset>
+    {{ form.submit }}
+    </form>
+{% endblock %}
